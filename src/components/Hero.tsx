@@ -16,6 +16,14 @@ const Hero = () => {
     }
   };
 
+  const handleDownloadCV = () => {
+    // Create a link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/prince-sharma-cv.pdf'; // You'll need to add this file to the public folder
+    link.download = 'Prince-Sharma-CV.pdf';
+    link.click();
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-gray-50 px-4">
       <div className="max-w-4xl mx-auto text-center">
@@ -40,7 +48,10 @@ const Hero = () => {
               <Mail size={20} />
               Get In Touch
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+            <button 
+              onClick={handleDownloadCV}
+              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+            >
               <Download size={20} />
               Download CV
             </button>

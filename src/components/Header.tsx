@@ -21,9 +21,15 @@ const Header = () => {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    try {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn(`Element with selector ${href} not found`);
+      }
+    } catch (error) {
+      console.error('Error scrolling to section:', error);
     }
     setIsMenuOpen(false);
   };
