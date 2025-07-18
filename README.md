@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **Modern UI**: Clean and professional design with smooth animations
 - **Contact Form**: Functional contact form with proper validation
 - **Smooth Scrolling**: Seamless navigation between sections
-- **Download CV**: Easy CV download functionality
+- **Resume**: Easy resume download functionality
 - **Accessibility**: Built with accessibility best practices
 
 ## 🛠️ Tech Stack
