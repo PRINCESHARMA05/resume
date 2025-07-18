@@ -19,8 +19,8 @@ const Hero = () => {
   const handleDownloadCV = () => {
     // Create a link element to trigger download
     const link = document.createElement('a');
-    link.href = '/prince-sharma-cv.pdf'; // You'll need to add this file to the public folder
-    link.download = 'Prince-Sharma-CV.pdf';
+    link.href = '/prince-sharma-resume.pdf'; // Updated file name
+    link.download = 'Prince-Sharma-Resume.pdf';
     link.click();
   };
 
