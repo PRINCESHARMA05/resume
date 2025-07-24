@@ -19,8 +19,8 @@ const Hero = () => {
   const handleDownloadCV = () => {
     // Create a link element to trigger download
     const link = document.createElement('a');
-    link.href = '/resume/prince-sharma-resume.pdf'; // Updated file path
-    link.download = 'Prince-Sharma-Resume.pdf';
+    link.href = '/resume/prince%20sharma%20resume.pdf'; // Corrected file path and encoded space
+    link.download = 'prince sharma resume.pdf';
     link.click();
   };
 
